@@ -1,0 +1,163 @@
+* {
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+	font-family: 'Jost', sans-serif;
+}
+body{
+	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+}
+.main{
+	width: 720pt;
+	height: calc(100vh - 100px);
+  margin: 50px auto;
+	overflow: hidden;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+	background: url("https://медовиков.рф:8000/image/octopus_fon") no-repeat center/ cover;
+	border-radius: 10px;
+	box-shadow: 0 10px 25px #111;
+}
+.signup{
+	width: 300px;
+  min-height: 360px;
+  padding: 2.5rem;
+	background: red;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px #666;
+  transform: translateX(-40px);
+  transition: transform 500ms;
+}
+
+.login{
+	width: 300px;
+  min-height: 360px;
+  padding: 2.5rem;
+	background: green;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px #666;
+  transform: translateX(40px);
+  transition: transform 500ms;
+}
+.signup_centered {
+	transform: none;
+}
+.signup_hidden {
+	display: none;
+}
+.login_centered {
+	transform: none;
+}
+.login_hidden {
+	display: none;
+}
+
+.signup__form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  transition: opacity 500ms;
+}
+.login__form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  transition: opacity 500ms;
+}
+.signup__form--hiding {
+  opacity: 0;
+}
+.signup__form--hidden {
+  display: none;
+}
+.login__form--hiding {
+  opacity: 0;
+}
+.login__form--hidden {
+  display: none;
+}
+
+.signup__title {
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+	font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.login__title {
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+	font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.signup__info--hidden {
+  display: none;
+}
+.signup__info--hiding {
+    opacity: 0;
+}
+
+.login__info--hidden {
+  display: none;
+}
+.login__info--hiding {
+    opacity: 0;
+}
+
+.signup__info {
+  color: #fff;
+  text-align: right;
+  cursor: pointer;
+	font-size: 1.25em;
+  margin-bottom: 1.75rem;
+}
+.login__info {
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+	font-size: 1.25em;
+  margin-bottom: 1.75rem;
+}
+
+.signup__input {
+	background: #e0dede;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+.login__input {
+	background: #e0dede;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+.signup__submit {
+  background: #573b8a;
+	border-radius: 0.25rem;
+  color: white;
+	cursor: pointer;
+  font-size: 1rem;
+	font-weight: bold;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+.login__submit {
+  background: #573b8a;
+	border-radius: 0.25rem;
+  color: white;
+	cursor: pointer;
+  font-size: 1rem;
+	font-weight: bold;
+  margin-top: 1rem;
+  padding: 0.5rem;

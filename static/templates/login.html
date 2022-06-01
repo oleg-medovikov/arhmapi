@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>arhm</title>
+  <link href="{{ url_for('static', path='css/login.css') }}" rel="stylesheet">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="main">
+  <div class="signup">
+    <h2 class="signup__title">Предстань</h2>
+    <h2 class="signup__info" ><p>Ты новенький? </p>
+                              <p>Не беспокойся</p>
+                              <p>приготовь себя </p>
+                              <p>и своё сознание </p>
+                              <p>к встрече</p>
+                              <p> с Древними</p></h2>
+    <form class="signup__form signup__form--hiding signup__form--hidden">
+      <input class="signup__input" type="text" name="txt" placeholder="User name" required="">
+      <input class="signup__input" type="email" name="email" placeholder="Email" required="">
+      <input class="signup__input" type="password" name="pswd" placeholder="Password" required="">
+      <button class="signup__submit" type="submit">Sign up</button>
+    </form>
+  </div>
+
+  <div class="login">
+    <h2 class="login__title">Войди</h2>
+    <h2 class="login__info" ><p>Ты вернулся? </p>
+                              <p>Не забывай</p>
+                              <p>ты ничтожен</p>
+                              <p>попытки постичь</p>
+                              <p>Древних</p>
+                              <p>ничтожны</p></h2>
+    <form class="login__form login__form--hiding login__form--hidden">
+      <input class="login__input" type="text" name="txt" placeholder="User name" required="">
+      <input class="login__input" type="password" name="pswd" placeholder="Password" required="">
+      <button class="login__submit" type="submit">Login up</button>
+    </form>
+  </div>
+</main>
+<!-- partial -->
+	<script src="{{ url_for('static', path='/js/login.js') }}"></script>
+</body>
+</html>

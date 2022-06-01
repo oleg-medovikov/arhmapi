@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<style>
+	h1 {
+		text-align: center;
+		color: brown;
+		font-family: verdana;
+		font-size: 300%;
+		}
+	p {
+		text-align: center;
+		color: red;
+		font-family: courier;
+		font-size: 160%;
+		}
+</style>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+</head>
+
+<body style="background-color:lightgray;">
+
+	<h1> Добро пожаловать в Архем!</h1>
+
+	<p> Залогиньтесь </p>
+
+	{% if message %}
+		<p>{{ message }}</p>
+	{% endif %}
+
+	<form action="" method="post">
+	<p>
+		<label for="username">Username</label>
+		<input type="text" name="username">
+	</p>
+	<p>
+		<label for="password">Password</label>
+		<input type="password" name="password">
+	</p>
+	<p>
+		<input type="submit">
+	</p>
+
+	</form>
+</body>
+</html>
